@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.6.0/css/flag-icons.min.css" integrity="sha512-+WVTaUIzUw5LFzqIqXOT3JVAc5SrMuvHm230I9QAZa6s+QRk8NDPswbHo2miIZj3yiFyV9lAgzO1wVrjdoO4tw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div id="container">
+      <h2>CURRENCY CONVERTER</h2>
+     <div id="amount">
+      <form>
+        <p>Enter Amount</p>
+        <input value="100" type="number">
+      </form>
+     </div>
+     <div id="from-to">
+      <div id="from">
+        <p>From</p>
+         <img src="https://flagsapi.com/US/flat/64.png" width="20px" height="20px">
+        <select name="from">
+         
+        </select>
+      </div>
+      <i class="fa-solid fa-arrow-right-arrow-left"></i>
+      <div id="to">
+        <p>To</p>
+        <img src="https://flagsapi.com/IN/flat/64.png" width="20px" height="20px">
+        <select name="to">
+          
+        </select>
+      </div>
+     </div>
+     <div id="Exchange-btn">
+      <button>Exchange</button>
+     </div>
+     <div id="converted-amt">
+      <p>Converted Amount</p>
+      <p  id="msg">100</p>
+     </div>
+    </div>
+</body>
+<script src="country.js"></script>
+<script src="script.js"></script>
+</html>
