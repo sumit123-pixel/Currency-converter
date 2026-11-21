@@ -111,8 +111,7 @@ body{
     flex-direction: column;
     border:dotted;
     border-width:2px;
-    width:200px;
+    width:350px;
     border-radius:7px;
     color:#4C2E05;
-    margin-left:80px;
 }

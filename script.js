@@ -37,7 +37,7 @@ btn.addEventListener("click",async (evt)=>{
    let amount = document.querySelector("#amount input");
    let amtVal = amount.value;
    if(amtVal==="" || amtVal<0){
-    amtVal.value=1;
+    amtVal.value="1";
     amount.value="1";
    }
 
@@ -45,7 +45,7 @@ btn.addEventListener("click",async (evt)=>{
 
    let response = await fetch(URL);
 
-   let data =response.json;
+   let data =await response.json();
    let rate = data[fromCurr.value.toLowerCase()][toCurr.value.toLowerCase()];
    console.log(rate);
 
